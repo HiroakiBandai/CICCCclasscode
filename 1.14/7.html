@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="output"></h1>
+<button onclick="weather();">number</button>
+<script>
+    function weather(){
+        switch(prompt("What is the weather like today?")){
+            case "sunny":
+            document.getElementsByClassName('output').innerHTML="fine";
+            break;
+            case "cloudy":
+            document.getElementsByClassName('output').innerHTML="a bit fine";
+            break;]
+            case "rain":
+            document.getElementsByClassName('output').innerHTML="a bit but";
+            break;
+            case "storm":
+            document.getElementsByClassName('output').innerHTML="but";
+            break;
+
+        }
+    }
+
+</script>
+
+</body>
+</html>

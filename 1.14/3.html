@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="output"></h1>
+<button onclick="checkNumber();">Tell me a number</button>
+<script>
+    function checkNumber(){
+        let theNumber = Number(prompt("Tell me a number"));
+        if(!Number.isNaN(theNumber)){
+            document.getElementById('output').innerHTML="Your answer is the square of " + theNumber*theNumber;
+        }else{
+            document.getElementById('output').innerHTML="Type a proper number";
+        }
+    }
+</script>
+
+</body>
+</html>
