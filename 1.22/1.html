@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="output"></h1>
+<h1 class="output"></h1>
+<input type ="text" class="number">
+<input type ="text" class="number">
+<input type ="text" class="number">
+<button type ="button" onclick="getResult();">push</button>
+<script>
+    function getResult() {
+        let firstNumber = parseInt(document.getElementsByClassName("number")[0].value);
+        let secondNumber = parseInt(document.getElementsByClassName("number")[1].value);
+        let thirdNumber = parseInt(document.getElementsByClassName("number")[2].value);
+        let maximumNumber = Math.max(firstNumber, secondNumber, thirdNumber);
+        let minimumNumber = Math.min(firstNumber, secondNumber, thirdNumber);
+        document.getElementsByClassName("output")[0].innerHTML="maximum number is "+maximumNumber;
+        document.getElementsByClassName("output")[1].innerHTML="minimum number is "+minimumNumber;
+    }
+</script>
+
+</body>
+</html>
